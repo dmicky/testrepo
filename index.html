@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ConnectSoft teszt</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: #1f2937;
+      background: #f3f4f6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: linear-gradient(135deg, #1d4ed8, #4f46e5);
+      color: #fff;
+      padding: 1rem 1.5rem;
+    }
+    header h1 { margin: 0; font-size: 1.5rem; }
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+    .card {
+      max-width: 36rem;
+      width: 100%;
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    }
+    .card h2 { margin-top: 0; font-size: clamp(1.5rem, 5vw, 2.25rem); }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 2rem;
+      background: #4f46e5;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .btn:hover, .btn:focus { background: #3730a3; }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.875rem;
+      color: #6b7280;
+    }
+    @media (max-width: 480px) {
+      .card { padding: 1.25rem; }
+      .btn { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ConnectSoft teszt</h1>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Üdvözöljük!</h2>
+      <p>
+        Ez a ConnectSoft teszt oldala. Egyszerű, gyors és külső függőségek
+        nélküli bemutatkozó oldal, amely a GitHub-integráció kipróbálására
+        készült. Ha kérdése van, vegye fel velünk a kapcsolatot!
+      </p>
+      <a class="btn" href="mailto:info@example.com">Kapcsolat</a>
+    </section>
+  </main>
+  <footer>&copy; ConnectSoft teszt</footer>
+</body>
+</html>
